@@ -1,0 +1,54 @@
+$rang: red;
+$shrift: system-ui, sans-serif;
+
+@mixin fontlar {
+    color: $rang;
+    font-family: $shrift;
+    text-decoration: none;
+}
+@mixin fontSize {
+    font: {
+        size: 22px;
+        weight: 500;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #123456;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .navbar-logo{
+        a{
+            font-size: 26px;
+            font-weight: 600;
+            @include fontlar()
+        }
+    }
+    &-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 0.1;
+        a{
+            @include fontSize();
+            @include fontlar();
+        }
+        &__activ{
+            color: forestgreen !important;
+        }
+    }
+    &-login{
+        a{
+            @include fontSize();
+            @include fontlar();
+        }
+    }
+}

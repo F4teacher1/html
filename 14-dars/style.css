@@ -1,0 +1,108 @@
+.box{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+.text{
+    background: red;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    animation-name: anima;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-delay: 1s;
+    animation-fill-mode: none;
+}
+.text:hover{
+    animation-play-state: paused;
+}
+
+@keyframes anima {
+    0%,100%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(200px, 0);
+    }
+    50%{
+        transform: translate(200px, 250px);
+    }
+    75%{
+        transform: translate(0, 250px);
+    }
+}
+
+.diract{
+    width: 150px;
+    height: 50px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    animation: direct 3s linear infinite;
+}
+.d1{ animation-direction: normal;}
+.d2{ animation-direction: alternate;}
+.d3{ animation-direction: alternate-reverse;}
+.d4{ animation-direction: reverse;}
+@keyframes direct {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(150px);
+    }
+}
+.foiz{
+    width: 50px;
+    height: 50px;
+    border: 5px solid red;
+    border-radius: 50%;
+    background: black;
+    overflow: hidden;
+}
+.foiz b{
+    width: 50px;
+    height: 50px;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: load;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(11, end);
+}
+@keyframes load {
+    100%{
+        transform: translateY(-550px);
+    }
+}
+.earth{
+    width: 150px;
+    height: 150px;
+    background: url(./01-3.jpg);
+    background-size: 300px ;
+    border-radius: 50%;
+    box-shadow: 8px 8px 20px #000000c5;
+    animation: spin 4s linear infinite;
+    animation-direction: normal;
+}
+@keyframes spin {
+    from{
+        background-position-x: 0;
+    }
+    to{
+        background-position-x: 300px;
+    }
+}

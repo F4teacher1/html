@@ -1,0 +1,75 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background: black;
+    /* transition: 5s; */
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+    transition-property: all;
+}
+.box:hover{
+    background: red;
+    width: 300px;
+}
+.home{
+    width: 400px;
+    border: 1px solid black;
+}
+.plar{
+    width: 100px;
+    height: 30px;
+    transition-duration: 3s;
+}
+.p1{
+    background-color: #b3ff00;
+    transition-timing-function: linear;
+}
+.p2{
+    background-color: #2fff00;
+    transition-timing-function: ease;
+}
+.p3{
+    background-color: #5c5c5c;
+    transition-timing-function: ease-in;
+}
+.p4{
+    background-color: #ff0000;
+    transition-timing-function: ease-out;
+}
+.p5{
+    background-color: #820084;
+    transition-timing-function: ease-in-out;
+}
+.p6{
+    background-color: #00d0ff;
+    transition-timing-function: cubic-bezier(1, 0.1, 1, 0.41);
+}
+.home:hover .plar{
+    margin-left: 200px;
+}
+
+.main{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 200px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.demo{
+    width: 98px;
+    height: 48px;
+    background: green;
+    /* margin-right: 50px; */
+    /* transform: translate(50px, 50px); */
+    /* transform: translateY(-50px); */
+    /* transform: rotate(0deg); */
+    /* transform: scale(1, 1); */
+    transform: skew(10deg, 10deg) translate(50px, 50px);
+    transition: 2s;
+}
+.demo:hover{
+    transform: rotate(360deg);
+}

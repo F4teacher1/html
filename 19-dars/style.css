@@ -1,0 +1,114 @@
+/* "Iceberg", "Inter", "Damion" internetdan yuklab olish */
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+/* "Creepster" fayl orqali ishlatish */
+@font-face {
+    font-family: "Creepster";
+    src: url(./Creepster-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background: black;
+    overflow: hidden;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.home{
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    justify-items: center;
+    align-items: end;
+    height: 100vh;
+    max-height: 1200px;
+}
+.home_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    padding-bottom: 50px;
+}
+.home_right{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+}
+.home_right::before{
+    content: "";
+    background: linear-gradient(180deg, rgba(56, 68, 86, 0.65) 48.04%, rgba(39, 45, 54, 0.1365) 100%);
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+    left: -140px;
+}
+.home_left_item{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+.title{
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 245px;
+    line-height: 300px;
+    background: conic-gradient(from 186.44deg at 31.29% 41.9%, rgba(146, 216, 247, 0.25) 0deg, rgba(119, 123, 125, 0.67) 337.16deg, rgba(146, 216, 247, 0.25) 360deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    mix-blend-mode: normal;
+    position: absolute;
+}
+.sub-title{
+    font-family: 'Creepster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.text{
+    font-family: 'Damion';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+.price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.buy_btn{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 633;
+    font-size: 36px;
+    line-height: 44px;
+    color: rgba(255, 255, 255, 0.85);
+    font-variation-settings: 'slnt' 0;
+    mix-blend-mode: normal;
+    background: rgba(119, 123, 125, 0.67);
+    border-radius: 5.8587px;
+    padding: 15px 35px;
+    margin-left: 20px;
+}
+.tom_jerry{
+    height: 650px;
+}

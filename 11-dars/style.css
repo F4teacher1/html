@@ -1,0 +1,44 @@
+.home{
+    width: 500px;
+    height: 300px;
+    border: 2px solid black;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.home1{
+    /* background: linear-gradient( 0deg, red 50%, green 60%, blue); */
+    background: linear-gradient(
+        to bottom, 
+        blue 33%,
+        red 35%,
+        white 30%,
+        white 70%,
+        red 72%,
+        green 66%
+    );
+}
+.home2{
+    background: radial-gradient( 
+        ellipse 200px 100px at 50% 50%,
+         red, green, blue, white,
+         orange, grey, black, yellow,
+         aqua, brown, pink
+    );
+}
+.home3{
+    background: 
+        linear-gradient(45deg, #b3b90571, rgba(0, 36, 81, 0)), 
+        url(./rasm.jpg)
+    ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.demo{
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 100px;
+    border-radius: 50%;
+    background: radial-gradient( circle at 65% 15%, aqua, darkblue);
+}

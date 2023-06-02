@@ -1,0 +1,97 @@
+.box{
+    background: black;
+    color: white;
+    font-size: 50px;
+    /* margin: 5px; */
+    width: 100px;
+    height: 100px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    grid-auto-rows: 150px;
+    grid-gap: 10px 10px;
+    /* grid-template: rows / columns; */
+    grid-template: repeat(3, 200px) / repeat(3, 1fr);
+    grid-template-areas: 
+        "box1 box1 box2" 
+        "box1 box1 box3" 
+        "box6 box5 box4"
+    ;
+    align-items: center;
+    justify-items: center;
+}
+.box1{grid-area: box1;}
+.box2{grid-area: box2;}
+.box3{grid-area: box3;}
+.box4{grid-area: box4;}
+.box5{grid-area: box5;}
+.box6{grid-area: box6;}
+
+.load{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: load 2s ease-in-out infinite;
+}
+.spin{
+    width: 45px;
+    height: 45px;
+    border: 4px solid #310f0e;
+    position: absolute;
+}
+.spin1{animation: spin1 2s ease-in-out infinite; }
+.spin2{animation: spin2 2s ease-in-out infinite; }
+.spin3{animation: spin3 2s ease-in-out infinite; }
+.spin4{animation: spin4 2s ease-in-out infinite; }
+@keyframes spin1 {
+    0%,100%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(-50px, 0);
+        border-color: #1efe00;
+    }
+}
+@keyframes spin2 {
+    0%,100%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(50px, 0);
+        border-color: #0033fe;
+    }
+}
+@keyframes spin3 {
+    0%,100%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(0, -50px);
+        border-color: #fe0000;
+    }
+}
+@keyframes spin4 {
+    0%,100%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(0, 50px);
+        border-color: #c621b8;
+    }
+}
+@keyframes load {
+    0%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(-135deg);
+    }
+    100%{
+        transform: rotate(-225deg);
+    }
+}
